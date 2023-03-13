@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MasukkanDataActivity"
+    android:layout_marginTop="30dp"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/masukkan_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_margin="10dp"
+        android:hint="masukkan nama anda"
+        android:minLines="2"
+        android:maxLines="3"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        android:background="@drawable/button_shape"/>
+
+    <EditText
+        android:id="@+id/kegiatan_column"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/masukkan_nama"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:minLines="2"
+        android:maxLines="10"
+        android:layout_margin="10dp"
+        android:hint="kegiatan hari ini"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/button_shape"
+        android:elevation="5dp"/>
+
+    <Button
+        android:id="@+id/date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kegiatan_column"
+        android:background="@drawable/button_shape"
+        android:layout_margin="10dp"
+        android:hint="pilih tanggal"
+        android:elevation="10dp"
+        android:textColorHint="@color/white"/>
+
+    <Button
+        android:id="@+id/simpan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_picker"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_shape"
+        android:hint="simpan"
+        android:elevation="10dp"
+        android:textColorHint="@color/white"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/isi_data" />
+
+</RelativeLayout>
