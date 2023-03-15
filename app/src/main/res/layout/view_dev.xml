@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343850"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/seru_seruan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seru Seruan"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/shortby_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape"
+        android:layout_marginTop="10dp"
+        android:text="short by"
+        android:layout_below="@id/seru_seruan"
+        android:fontFamily="@font/poppinssemibold"
+        android:paddingStart="170dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/oldest_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/oldest_icon"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/shortby_text"/>
+
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shortby_text"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@id/oldest_icon" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:layout_marginTop="10dp"
+            android:text="short by"
+            android:layout_below="@id/seru_seruan"
+            android:fontFamily="@font/poppinssemibold"
+            android:paddingStart="170dp"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </RelativeLayout>

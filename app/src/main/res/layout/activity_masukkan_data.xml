@@ -5,8 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MasukkanDataActivity"
-    android:layout_marginTop="30dp"
+    android:background="@color/theme_app"
     android:padding="20dp">
+
+    <ImageButton
+        android:id="@+id/arrow_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/arrow_back_icon"
+        android:backgroundTint="@color/white"/>
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Catatan"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppinsbold"/>
 
     <EditText
         android:id="@+id/masukkan_nama"
@@ -15,6 +33,7 @@
         android:paddingStart="10dp"
         android:paddingEnd="10dp"
         android:layout_margin="10dp"
+        android:layout_below="@id/text_1"
         android:hint="masukkan nama anda"
         android:minLines="2"
         android:maxLines="3"
@@ -42,11 +61,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/kegiatan_column"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/button_shape"
-        android:layout_margin="10dp"
-        android:hint="pilih tanggal"
         android:elevation="10dp"
-        android:textColorHint="@color/white"/>
+        android:hint="pilih tanggal"
+        android:textColorHint="@color/white" />
 
     <Button
         android:id="@+id/simpan"
@@ -59,12 +81,22 @@
         android:elevation="10dp"
         android:textColorHint="@color/white"/>
 
-    <ImageView
-        android:layout_width="300dp"
-        android:layout_height="250dp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
-        android:background="@drawable/isi_data" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/item_shape"
+        android:backgroundTint="#3F3F59"
+        android:layout_alignParentBottom="true">
+
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/notebook"/>
+
+
+    </RelativeLayout>
 
 </RelativeLayout>

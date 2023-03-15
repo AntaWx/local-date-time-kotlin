@@ -4,35 +4,39 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="20dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginBottom="10dp"
-    android:layout_marginStart="10dp"
-    android:layout_marginEnd="10dp"
+    android:layout_margin="20dp"
     android:elevation="10dp"
-    android:background="@drawable/button_shape">
+    android:background="@drawable/button_shape"
+    android:backgroundTint="#3F3F59">
 
     <TextView
         android:id="@+id/nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ini nama"
-        android:fontFamily="@font/poppinsmedium"/>
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinsmedium"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/kegiatan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ini kegiatan"
+        android:textColor="@color/white"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/poppinssemibold"/>
+        android:fontFamily="@font/poppinssemibold"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/tanggal_kegiatan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ini tanggal"
+        android:textColor="@color/white"
         android:layout_marginTop="5dp"
-        android:fontFamily="@font/poppinsregular"/>
+        android:fontFamily="@font/poppinsregular"
+        android:textStyle="bold"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -44,6 +48,7 @@
             android:id="@+id/edit_button"
             android:layout_width="25dp"
             android:layout_height="25dp"
+            android:backgroundTint="#7274FD"
             android:background="@drawable/edit_icon"/>
 
         <ImageButton
@@ -51,6 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
+            android:backgroundTint="@color/redPdi"
             android:background="@drawable/delete_icon"/>
 
     </LinearLayout>
