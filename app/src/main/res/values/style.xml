@@ -12,4 +12,31 @@
         <item name="android:windowActionModeOverlay">true</item>
     </style>
 
+    <style name="NavigationViewStyle" parent="Widget.Design.NavigationView">
+        <item name="android:textAppearance">@style/NavigationViewTextAppearance</item>
+    </style>
+
+    <style name="NavigationViewTextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppinssemibold</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ungu</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.ActionBar</item>
+        <item name="titleTextColor">@color/white</item>
+    </style>
+
+    <style name="ThemeOverlay.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textViewStyle">@style/MyActionBarTitle</item>
+    </style>
+
+    <style name="MyActionBarTitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/poppinsbold</item>
+    </style>
+
+
 </resources>

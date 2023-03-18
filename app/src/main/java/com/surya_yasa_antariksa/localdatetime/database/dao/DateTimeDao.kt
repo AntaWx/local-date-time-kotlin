@@ -14,4 +14,14 @@ interface DateTimeDao {
 
     @Delete
     fun delete(dateTimeEntity: DateTimeEntity)
+
+    @Query("SELECT * FROM dateTimeEntity ORDER BY localDateTime DESC")
+    fun getAllByLatest(): List<DateTimeEntity>
+
+    @Query("SELECT * FROM dateTimeEntity ORDER BY localDateTime ASC")
+    fun getAllByOldest(): List<DateTimeEntity>
+
+    @Update
+    fun update(dateTimeEntity: DateTimeEntity)
+
 }

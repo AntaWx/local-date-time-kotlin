@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">local date time</string>
+    <string name="app_name">catatan pesanan</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
 </resources>

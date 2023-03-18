@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.app.DatePickerDialog
 import android.content.Intent
 import android.widget.*
+import androidx.core.content.ContextCompat
 import com.surya_yasa_antariksa.localdatetime.database.DateTimeDatabase
 import com.surya_yasa_antariksa.localdatetime.database.entity.DateTimeEntity
 import com.surya_yasa_antariksa.localdatetime.databinding.ActivityMasukkanDataBinding
@@ -61,6 +62,7 @@ class MasukkanDataActivity : AppCompatActivity() {
             datePickerDialog.show()
         }
 
+        datePicker.setTextColor(ContextCompat.getColor(this, R.color.white))
         saveButton.setOnClickListener {
             val nama = masukanNama.text.toString()
             val kegiatan = masukkanKegiatan.text.toString()
